@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "frontend": "cd ../frontend && python3 -m http.server 5500",
+    "dev": "concurrently \"npm start\" \"npm run frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
